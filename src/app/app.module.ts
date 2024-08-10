@@ -5,14 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BodyComponent } from './components/body/body.component';
-import { TreatmentsComponent } from './components/treatments/treatments.component';
+import { ClinicaComponent } from './components/clinica/clinica.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     BodyComponent,
-    TreatmentsComponent
+    ClinicaComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
