@@ -23,6 +23,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "allowedCommonJsDependencies": [
+              "aos"
+            ],
             "outputPath": "dist/dra-jhenifer",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -37,10 +40,10 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/aos/dist/aos.css"
             ],
-            "scripts": [],
-            "allowedCommonJsDependencies": ["aos"]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -96,8 +99,7 @@
               }
             ],
             "styles": [
-                "src/styles.css",
-                "node_modules/aos/dist/aos.css"
+              "src/styles.css"
             ],
             "scripts": []
           }
