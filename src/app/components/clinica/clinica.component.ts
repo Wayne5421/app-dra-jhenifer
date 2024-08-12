@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ClinicaComponent {
   images = [
-    'clinica.JPG',
     'clinica_1.JPG',
     'clinica_2.JPG',
     'clinica_3.JPG',
