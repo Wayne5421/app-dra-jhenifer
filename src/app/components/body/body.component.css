@@ -72,9 +72,10 @@
     flex-wrap: wrap;
     gap: 30px; 
     justify-content: center;
-    width: fit-content; 
+    width: 100%; 
     max-width: 600px; 
     margin: 0 auto;
+    margin-bottom: 50px;
 
 }
 
@@ -158,4 +159,68 @@
 
     transform: scale(1.05);
     z-index: 100;
+}
+
+
+
+  
+  /* Telas pequenas (smartphones em modo retrato) */
+  @media (max-width: 480px) {
+
+  }
+  
+  /* Telas pequenas (smartphones em modo paisagem) */
+  @media (min-width: 481px) and (max-width: 768px) {
+
+  }
+  
+  /* Telas médias (tablets) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+
+  }
+  
+  /* Telas médias (tablets em modo paisagem, telas pequenas de laptops) */
+  @media (min-width: 1025px) and (max-width: 1200px) {
+
+
+  }
+  
+  /* Telas grandes (desktops) */
+  @media (min-width: 1201px) and (max-width: 1600px) {
+    
+
+  }
+  
+  /* Telas extra grandes (monitores grandes) */
+  @media (min-width: 1601px) {
+
+  }
+  
+
+  @media (max-width: 1200px) {
+    .main-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .profile {
+        
+        margin-right: 0;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .tratamentos {
+        justify-content: center;
+        max-width: 45%;
+    }
+
+    .image{
+        height: 30vh;
+        width: 30vh;
+    }
 }
