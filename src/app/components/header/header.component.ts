@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  myNumber: string = '5519996950437'
+  myNumber: string = '5519974035225'
 
 }

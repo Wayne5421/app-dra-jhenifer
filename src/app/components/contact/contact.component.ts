@@ -9,7 +9,7 @@ export class ContactComponent {
 
 
   redirectToWhatsApp() {
-    const phoneNumber = '5519996950437'; // NUMERO PARA REDIRECIONAR MENSAGEM
+    const phoneNumber = '5519974035225'; // NUMERO PARA REDIRECIONAR MENSAGEM
     const message = `Olá! Gostaria de agendar uma avaliação!!`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
