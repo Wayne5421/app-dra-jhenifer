@@ -19,8 +19,19 @@ export class ClinicaComponent {
   currentIndex = 0;
 
   get transform() {
+    let width = document.querySelector(".carrossel")!.clientWidth
+    if(width >= 542){
+      return `translateX(-${this.currentIndex * 33}%)`;
+    }
+    else if(width <= 600 && width > 413){
+      return `translateX(-${this.currentIndex * 50}%)`;
 
-    return `translateX(-${this.currentIndex * 25}%)`;
+    }
+    else if(width <= 413){
+      return `translateX(-${this.currentIndex * 100}%)`;
+
+    }
+    return;
   }
 
   nextSlide() {

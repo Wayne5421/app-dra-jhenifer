@@ -1,7 +1,7 @@
 
 .main-container {
     color: black;
-    height: 100vh; 
+    min-height: 100vh;
     width: 100%;
     padding-top: 200px;
     display: flex;
@@ -12,7 +12,7 @@
 
 .title{
     display: flex;
-    
+
     width: 100%;
 }
 
@@ -24,7 +24,7 @@
 
 /* Conteúdo principal */
 .main-content {
-    text-align: center; 
+    text-align: center;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -70,10 +70,10 @@
 .tratamentos {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px; 
+    gap: 30px;
     justify-content: center;
-    width: 100%; 
-    max-width: 600px; 
+    width: 100%;
+    max-width: 600px;
     margin: 0 auto;
     margin-bottom: 50px;
 
@@ -95,9 +95,9 @@
     background-color: rgb(247, 247, 247);
 
     border-radius: 8px;
-    padding: 10px; 
+    padding: 10px;
     text-align: center;
-    width: calc(30% - 10px); 
+    width: calc(30% - 10px);
     max-height: 300px;
     box-sizing: border-box;
     overflow: hidden;
@@ -139,20 +139,20 @@
 
 .item:hover .overlay {
     opacity: 1;
-    background-position: right; 
+    background-position: right;
     cursor: pointer;
 
-    
+
 }
 
 .overlay span {
     color: #000000;
     font-weight: bold;
-    
+
 }
 .item:hover img {
-    filter: blur(4px); 
-    
+    filter: blur(4px);
+
 }
 
 .item:hover{
@@ -163,39 +163,39 @@
 
 
 
-  
+
   /* Telas pequenas (smartphones em modo retrato) */
   @media (max-width: 480px) {
 
   }
-  
+
   /* Telas pequenas (smartphones em modo paisagem) */
   @media (min-width: 481px) and (max-width: 768px) {
 
   }
-  
+
   /* Telas médias (tablets) */
   @media (min-width: 769px) and (max-width: 1024px) {
 
   }
-  
+
   /* Telas médias (tablets em modo paisagem, telas pequenas de laptops) */
   @media (min-width: 1025px) and (max-width: 1200px) {
 
 
   }
-  
+
   /* Telas grandes (desktops) */
   @media (min-width: 1201px) and (max-width: 1600px) {
-    
+
 
   }
-  
+
   /* Telas extra grandes (monitores grandes) */
   @media (min-width: 1601px) {
 
   }
-  
+
 
   @media (max-width: 1200px) {
     .main-content {
@@ -204,7 +204,7 @@
     }
 
     .profile {
-        
+
         margin-right: 0;
         padding: 0px;
         justify-content: center;
@@ -216,8 +216,17 @@
 
     .tratamentos {
         justify-content: center;
-        max-width: 45%;
-    }
+        max-width: 100%;
+        padding: 0px 90px;
+        .item{
+          width: 200px;
+        }
+      }
+      .text{
+        h3{
+          font-size: clamp(1.5rem, 2vw, 4rem);
+        }
+      }
 
     .image{
         height: 30vh;
