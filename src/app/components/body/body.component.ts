@@ -17,7 +17,7 @@ export class BodyComponent implements OnInit {
     {tratamento: 'Botox', icone: '/assets/tratamentos/botox-preenchimento.png'},
     {tratamento: 'Clinica', icone: '/assets/tratamentos/clinica.png'},
     {tratamento: 'Pediatria', icone: '/assets/tratamentos/pediatria.png'},
-    {tratamento: 'Odontologia', icone: '/assets/tratamentos/odontologia.png'},
+    {tratamento: 'Ortodontia', icone: '/assets/tratamentos/odontologia.png'},
   ];
 
   ngOnInit() {
